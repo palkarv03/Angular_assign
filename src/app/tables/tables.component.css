@@ -1,0 +1,13 @@
+h2{
+    text-decoration: underline;
+}
+table{
+    width: 90%;
+    margin: 30px 30px 30px 30px;
+  }
+td{
+    font-size: 12px;
+}
+thead{
+    font-size: 16px;
+}

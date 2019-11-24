@@ -1,0 +1,62 @@
+<div class="row">
+    <div class="btncontainer">
+      <div class="row">
+        <button
+          type="button"
+          class="btn btn-outline-primary active"
+          (click)="AddTV()"
+          [disabled]="isActiveTV"
+        >
+          TV
+        </button>
+      </div>
+      <div class="row">
+        <button
+          type="button"
+          class="btn btn-outline-primary active"
+          (click)="AddAC()"
+          [disabled]="isActiveAC"
+        >
+          AC
+        </button>
+      </div>
+      <div class="row">
+        <button
+          type="button"
+          class="btn btn-outline-primary active"
+          (click)="AddLaptop()"
+          [disabled]="isActiveLaptop"
+        >
+          Laptop
+        </button>
+      </div>
+      <div class="row">
+        <button
+          type="button"
+          class="btn btn-outline-primary active"
+          (click)="AddMobile()"
+          [disabled]="isActiveMobile"
+        >
+          Mobile
+        </button>
+      </div>
+    </div>
+    <div class="displaycontainer" *ngIf="device" [ngSwitch]="device">
+      <app-mobile
+        *ngSwitchCase="'Mobile'"
+        (evEmit)="LikeCount($event)"
+      ></app-mobile>
+      <app-tv
+        *ngSwitchCase="'TV'"
+        (evEmit)="LikeCount($event)"
+      ></app-tv>
+      <app-laptop
+        *ngSwitchCase="'Laptop'"
+        (evEmit)="LikeCount($event)"
+      ></app-laptop>
+      <app-ac
+        *ngSwitchCase="'AC'"
+        (evEmit)="LikeCount($event)"
+      ></app-ac>
+    </div>
+  </div>

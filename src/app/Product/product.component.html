@@ -1,0 +1,33 @@
+<hr/>   
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <div class="col">
+                newProduct:
+                <input type="text" placeholder="enter name" #name>
+                <input type="text" placeholder="enter price" #price>
+                <input type="text" placeholder="enter rating" #rating>
+                <button type="button" (click)="Addproduct(name.value,price.value,rating.value)">Submit</button>          
+            </div>
+            <table class="table table-bordered table-inverse table-responsive">
+                <thead class="thead-inverse">
+                    <tr>
+                        <th>Name</th>
+                        <th>Price</th>
+                        <th>Image</th>
+                        <th>Rating</th>
+                    </tr>
+                    </thead>
+                    <tbody *ngFor="let pro of ProductDetails">
+                        <tr>
+                            <td scope="row"></td>
+                            <td>{{pro.name}}</td>
+                            <td>{{pro.price}}</td>
+                            <td><img src="{{pro.imgUrl}}" class="img-responsive" height="50" width="50"></td>
+                            <td>{{pro.rating}}</td>
+                        </tr>
+                    </tbody>
+            </table>
+        </div>
+    </div>
+</div>

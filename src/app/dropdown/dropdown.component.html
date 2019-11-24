@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="row">
+    <h3>Dropdown through ngContent</h3>
+  </div>
+  <br />
+  <div class="row">
+    <div class="dropdown" [class.dropup]="isActive">
+      <button
+        type="button"
+        class="btn btn-secondary dropdown-toggle"
+        id="dropdownMenuButton"
+        data-toggle="dropdown"
+        aria-haspopup="true"
+        aria-expanded="false"
+        (click)="Active()"
+      >
+        Dropdown
+      </button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" href="#">Link 1</a>
+        <a class="dropdown-item" href="#">Link 2</a>
+        <a class="dropdown-item" href="#">Link 3</a>
+      </div>
+      <ng-content select=".dropdown-menu"></ng-content>
+    </div>
+  </div>
+</div>

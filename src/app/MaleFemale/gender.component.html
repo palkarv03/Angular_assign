@@ -1,0 +1,21 @@
+
+    <hr/>
+        <button type="button" class="btn btn-md border"
+        (click)="user=MaleInfo"
+        [disabled]="user==MaleInfo"
+        >Male</button>
+        <button type="button" class="btn btn-md border"
+        (click)="user=FemaleInfo"
+        [disabled]="user==FemaleInfo"
+        >Female</button>
+        <div class="container">
+        <div class="row">
+        <div class="col" *ngIf="user">
+        <img src="{{user.imgUrl}}">
+        <h2>{{user.name}}</h2>
+        </div>
+        </div>
+        </div>
+
+        
+    

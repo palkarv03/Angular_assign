@@ -1,0 +1,15 @@
+div.btncontainer {
+    width: 20%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  div.displaycontainer {
+    width: 70%;
+    height: auto;
+  }
+  button {
+    width: 200px;
+    margin: 10px 10px 10px 10px;
+  }

@@ -1,0 +1,58 @@
+<h2 align="center">
+  Twitter
+  <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+</h2>
+<div class="container">
+  <div class="row">
+    <div class="faceid">
+      <img
+        class="img-fluid rounded-circle"
+        height="70px"
+        width="70px"
+        src="../../assets/img/dp_black.jpg"
+        alt="Profile Picture"
+      />
+    </div>
+
+    <div class="row userId">
+      <strong>
+        <span class="firstId">Vishal Palkar</span>
+      </strong>
+      <span class="secondId">@palkarv_03</span>
+    </div>
+    <div class="date">
+      13 August
+    </div>
+
+    <div class="row content">
+      <span>
+        Never waste any amount of time doing something blunder, when there is a
+        sunset outside you should be sitting under !
+      </span>
+    </div>
+
+    <div class="row img">
+      <img
+        src="../../assets/img/sunset.jpg"
+        alt="Sunset_Image"
+        height="500px"
+        width="700px"
+      />
+    </div>
+    <div class="row feature">
+      <i class="fa fa-comment-o fa-1x" aria-hidden="true" title="Comments"
+        >11</i
+      >
+      <i class="fa fa-retweet fa-1x" aria-hidden="true" title="Retweet">3</i>
+      <i
+        class="fa fa-1x"
+        aria-hidden="true"
+        (click)="HeartLike()"
+        [class.fa-heart-o]="!activeHeart"
+        [class.fa-heart]="activeHeart"
+      >
+      </i>
+      <span class="like" *ngIf="like > 0">{{ like }}</span>
+    </div>
+  </div>
+</div>

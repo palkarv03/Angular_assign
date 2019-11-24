@@ -1,0 +1,46 @@
+.fa-twitter,
+.fa-twitter-square {
+  color: #00aced;
+}
+
+span.firstId {
+  margin-left: 40px;
+}
+
+span.secondId {
+  margin-left: 15px;
+}
+
+div.content {
+  margin-left: 110px;
+  /* border:solid black; */
+}
+
+div.date {
+  margin-left: 40px;
+}
+
+div.container {
+  height: 600px;
+  width: 600px;
+  /* border:solid red; */
+}
+
+div.img {
+  height: 500px;
+  widows: 500px;
+  /* border:solid black; */
+}
+
+div.feature {
+  margin-left: 110px;
+  /* border:solid black; */
+}
+
+i {
+  padding: 15px 15px 15px 85px;
+}
+
+.fa-heart {
+  color: red;
+}
